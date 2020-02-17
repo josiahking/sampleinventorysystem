@@ -5,6 +5,7 @@
  *
  * @author Josiah Gerald
  */
+
 class InventoryManager 
 {
     
@@ -17,6 +18,12 @@ class InventoryManager
         
     }
     
+    public function getDataStoreFile()
+    {
+        return $this->dataStoreFile;
+    }
+
+
     public function setInventoryData(array $data) :bool
     {
         if(!empty($data)){

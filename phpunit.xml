@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/6.3/phpunit.xsd"
+    bootstrap="vendor/autoload.php"
+    colors="true"
+    timeoutForSmallTests="1"
+    timeoutForMediumTests="10"
+    timeoutForLargeTests="60"
+    convertWarningsToExceptions="true"
+    convertErrorsToExceptions="true"
+    stopOnFailure="true"
+    verbose="true"
+>
+    <testsuites>
+        <testsuite name="Unit Test">
+            <directory suffix="Test.php" phpVersion="7.2.0">tests</directory>
+            <!--<file phpVersion="7.3.0" phpVersionOperator=">=">tests/InventoryManagerTest.php</file>-->
+        </testsuite>
+    </testsuites>
+
+</phpunit>
